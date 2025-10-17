@@ -15,23 +15,43 @@
           <legend>Preencha os campos abaixo:</legend>
           <div>
             <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Digite seu nome"
+            />
           </div>
           <div>
-              <label for="email">Email:</label>
-              <input type="email" name="email" id="email" placeholder="example@email.com">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@email.com"
+            />
           </div>
           <div>
             <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha">
+            <input
+              type="password"
+              name="senha"
+              id="senha"
+              placeholder="Digite sua senha"
+            />
           </div>
           <div>
             <label for="dataDeNascimento">Data de Nascimento:</label>
-            <input type="date" name="dataDeNascimento" id="dataDeNascimento">
+            <input type="date" name="dataDeNascimento" id="dataDeNascimento" />
           </div>
           <div>
             <label for="nomeDaMae">Nome da mãe:</label>
-            <input type="text" name="nomeDaMae" id="nomeDaMae">
+            <input
+              type="text"
+              name="nomeDaMae"
+              id="nomeDaMae"
+              placeholder="Digite o nome da mãe"
+            />
           </div>
           <div>
             <label for="estado"></label>
@@ -52,8 +72,55 @@
             </select>
           </div>
         </fieldset>
-      </form>
+        <!--    <fieldset>
+          <legend>Monte seu açai</legend>
+          <input type="checkbox" name="leiteEmPo" id="leiteEmPo" />
+          <label for="leiteEmPo">Leite em pó</label>
+          <input type="checkbox" name="granulado" id="granulado" />
+          <label for="granulado">Granulado</label>
+          <input type="checkbox" name="amedoim" id="amedoim" />
+          <label for="amedoim">Amedoim</label>
+        </fieldset> -->
+        <fieldset>
+          <legend>Selecione o que você deseja:</legend>
+          <div>
+            <input type="checkbox" name="aula" id="aula" checked />
+            <label for="aula">Assistir a aula</label>
+          </div>
 
+          <div>
+            <input type="checkbox" name="camera" id="camera" />
+            <label for="camera">Ligar a câmera</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="microfone" id="microfone" />
+            <label for="microfone">Ligar o microfone</label>
+          </div>
+
+          <div>
+            <input type="checkbox" name="chat" id="chat" />
+            <label for="chat">Ter acesso ao chat</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Selecione seu genero:</legend>
+          <!-- O input do tipo radio, precisam trabalhar em grupo. E o grupo é definido através do atributo "name" , todos os "name" precisam ser o mesmo. -->
+          <div>
+            <input type="radio" name="genero" id="masculino" />
+            <label for="masculino">Masculino</label>
+          </div>
+          <div>
+            <input type="radio" name="genero" id="feminino" />
+            <label for="feminino">Feminino</label>
+          </div>
+
+          <div>
+            <input type="radio" name="genero" id="naoInformar" />
+            <label for="naoInformar">Prefiro não informar</label>
+          </div>
+        </fieldset>
+      </form>
     </main>
   </body>
 </html>

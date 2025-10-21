@@ -1,0 +1,40 @@
+/*Comentário no CSS*/
+
+// Nosso navegador não lê SCSS. Logo, precisamos compilá-lo(Traduzir para que o navegaor entena). E o navegador entende o CSS. Vamos compilar ativando a extensão Live Sass Compiler (Watch Sass)
+// style.css.map é onde ficam as configurações para a compilação funcionar.
+
+/* Estrutura do CSS/SCSS */
+
+/* seletor{
+    propriedade: valor da propriedade;
+} 
+    
+*/
+
+/*  Seletor por elemento / tag h1, p, body, div
+   O seletor por elemento estiliza todos os elementos de um tipo específico no HTML.
+   Por exemplo, p { color: green; } aplicará a cor verde a todos os elementos <p> na página. */
+
+/*Efeito cascata*/
+h1 {
+  color: red;
+  color: blue;
+  color: green;
+}
+
+/*Seletor de Classe .paragrafo .div1
+  O seletor de classe (.) estiliza elementos HTML que possuem uma classe específica.
+  Ele permite aplicar estilos a múltiplos elementos que compartilham a mesma classe.
+  Por exemplo, .minha-classe { color: blue; } aplicará a cor azul a todos os elementos com a classe "minha-classe". */
+
+.item1 {
+  color: purple;
+}
+
+.item2 {
+  color: orange;
+}
+
+.corAzul {
+  color: blue;
+}

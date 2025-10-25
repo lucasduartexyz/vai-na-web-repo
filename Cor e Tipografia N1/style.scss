@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 70vh;
+  background-color: #ff0000;
+  background-color: #00ff00;
+  background-color: #0000ff;
+  background-color: #168aad;
+  background-image: url("https://mv.com.br/storage/blog/1431162022071162cc5e64ae217.png");
+  background-repeat: no-repeat; //Não quero que a imagem se repita
+  background-size: contain; //contain vai sempre mostrar 100% o tamanho da imagem, independente do tamanho.
+  //background-size: cover; //Dimensiona a imagem para o tamanho da caixa
+  background-position: right;
+  background-position: left;
+  background-position: center;
+  background-size: 100% 70vh;
+}
+
+h1 {
+  color: red;
+  // font-size: 32px;
+  //1rem = 16px
+  //2rem = 32px
+  //3rem = 48px;
+  //4rem = 64px
+  //font-size: 24px;
+  font-size: 2.5rem; //Tamanho da fonte
+  color: #b5e48c;
+  font-weight: 100; //Peso da fonte 100 - 900
+  //font-weight: bold; //negrito
+
+  //Alinhamento de texto
+  text-align: left; //alinhamento de texto a esquerda
+  text-align: right; // alinhamento de texto a direita
+  text-align: justify; //texto justificado
+  text-align: center; //texto centralizado
+}
+
+p {
+  text-transform: uppercase; //Transformação de todo o texto para maiúsculo
+  text-transform: capitalize; //A primeira letra de cada palavra em maiúsculo
+  text-transform: lowercase; ////Transformação de todo o texto para minúsculo
+  text-align: justify; //texto justificado
+}

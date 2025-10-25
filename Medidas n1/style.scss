@@ -1,0 +1,62 @@
+/* 
+  O seletor * (asterisco) é o seletor universal.
+  Ele seleciona TODOS os elementos da página.
+  Aqui usamos para remover margens e espaçamentos padrão,
+  e ajustar o box-sizing.
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*   Estiliza todos os parágrafos <p> da página.*/
+p {
+  color: green;
+}
+
+/*ID, chama com #   Cada ID deve ser único na página.*/
+
+#paragrafo-unico {
+  color: blue; /*color: cor da fonte*/
+}
+
+/*Class, chama com .*/
+.box-fixa {
+  width: 800px; /* width: largura - define a largura do elemento */
+  height: 150px; /*height: altura - define a altura do elemento*/
+  background-color: pink; /*background-color: define a cor de fundo*/
+}
+
+/*Aninhamento (funciona no SCSS, não no CSS puro!)
+Isso significa que as classes .p1 e .p2 estão dentro da .box-porcentagem.
+*/
+.box-porcentagem {
+  width: 80%;
+  background-color: yellow;
+
+  .p1 {
+    color: violet; /* cor do texto */
+    border: solid black; /* adiciona uma borda sólida preta */
+    width: 40%; /* ocupa 40% da largura do elemento pai, que no caso, o elemento pai tem o tamanho de 80% */
+  }
+
+  .p2 {
+    color: purple;
+    border: solid black;
+    width: 100%; /* ocupa 100% da largura do elemento pai, que no caso, o elemento pai tem o tamanho de 80% */
+  }
+}
+
+/* 
+  Exemplo de uso de unidades relativas à tela (viewport).
+  vw = largura da tela
+  vh = altura da tela
+*/
+
+.box-viewport {
+  background-color: chartreuse; /* cor de fundo */
+  width: 80vw; /* 80% da largura visível da tela */
+  height: 30vh; /* 30% da altura visível da tela */
+}
